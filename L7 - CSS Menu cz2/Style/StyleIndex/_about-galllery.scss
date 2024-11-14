@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Ogólne style
+body {
+  font-family: Arial, sans-serif;
+  background-color: $color2;
+  color: $color1;
+}
+
+header {
+  text-align: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px 0;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+// Galeria
+.gallery {
+  padding: 20px;
+  background-color: $color2;
+  margin: 20px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    .gallery-item {
+      flex: 1 1 calc(33.33% - 10px);
+      max-width: calc(33.33% - 10px);
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  }
+}
